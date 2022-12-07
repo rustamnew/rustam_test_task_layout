@@ -1,0 +1,147 @@
+.subscription {
+    position: relative;
+    display: flex;
+    padding-top: 123px;
+    padding-bottom: 156px;
+
+    .title {
+        margin-bottom: 40px;
+
+        div {
+            display: flex;
+            align-items: center;
+
+            span {
+                font-weight: 700;
+                font-size: 90px;
+                line-height: 96px;
+                color: #131111;
+                letter-spacing: 1.2px;
+                text-shadow: -1px -1px 0 #bcbcbc, 1px -1px 0 #bcbcbc, -1px 1px 0 #bcbcbc, 1px 1px 0 #bcbcbc;
+            }
+
+            p {
+                margin: 0;
+                font-weight: 700;
+                font-size: 90px;
+                line-height: 104px;
+                color: #F5F5F5;
+                margin: 0 19px;
+            }
+
+            .sale {
+                margin-top: 8px;
+                margin-right: 20px;
+                height: 90px;
+                position: relative;
+                
+                .blur {
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                    bottom: -5px;
+                    left: -5px;
+                    z-index: 6;
+                    background: radial-gradient(50% 50% at 50% 50%, #F64F00 0%, rgba(246, 79, 0, 0) 100%);
+                    filter: blur(32px);
+                }
+                
+            }
+            .lightning {
+                
+                height: 90px;
+                margin: 8px 8px 0;
+
+                position: relative;
+                .blur {
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                    bottom: -5px;
+                    left: -5px;
+                    z-index: 6;
+                    background: radial-gradient(50% 50% at 50% 50%, #0178F3 0%, rgba(1, 120, 243, 0) 100%);
+                    filter: blur(32px);
+                }
+            }
+        }
+
+    }
+
+    .subtitle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #BCBCBC;
+        width: 40%;
+        margin-bottom: 32px;
+    }
+
+    form {
+        input {
+            padding-bottom: 10px;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid #7D7D7D;
+            outline: none;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #fff;
+            font-family: 'Raleway';
+            margin-bottom: 57px;
+            width: 445px;
+
+            &::placeholder {
+                font-family: 'Raleway';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: #7D7D7D;
+            }
+        }
+
+        button {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #333333;
+        }
+    }
+
+    .image {
+        position: absolute;
+        right: -92px;
+        top: 90px;
+
+        width: 736px;
+        height: 736px;
+
+        border: 1px solid #333333;
+        border-radius: 50%;
+        
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 655px;
+            height: 655px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+
+
+
+}

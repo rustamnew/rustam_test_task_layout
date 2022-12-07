@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    
+}
+body {
+    font-family:  Raleway, Arial, Helvetica, sans-serif;
+    color: #333333;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    background-color: #131111;
+
+    overflow-x: hidden;
+    padding-top: 108px;
+}
+
+ul,li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5 {
+    margin: 0;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    
+}
+
+section {
+    overflow: hidden;
+}
+.container {
+    width: 1218px;
+    margin: 0 auto;
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+    user-select: none;
+}
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+    content: none !important;
+}
