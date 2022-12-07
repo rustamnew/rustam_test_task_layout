@@ -52,6 +52,7 @@ section { overflow: hidden; }
 .header .row .nav ul li.active { color: #BCBCBC; font-weight: 600; }
 .header .row .nav ul li { margin-right: 27px; }
 .header .row .nav ul li:last-child { margin-right: 0; }
+.header .row .nav ul li a { transition: 0.2s; }
 .header .row .nav ul li a:hover { color: #BCBCBC; }
 .header .row .buttons { display: flex; align-items: center; }
 .header .row .buttons .item { height: 26px; width: 26px; margin-left: 16px; cursor: pointer; }
@@ -81,8 +82,11 @@ section { overflow: hidden; }
 .footer .container .social { display: flex; margin-top: -7px; }
 .footer .container .social a { display: inline-flex; margin-right: 17px; }
 .footer .container .social a:last-child { margin-right: 0; }
+.footer .container .copyright { font-size: 16px; line-height: 22px; color: #7D7D7D; }
+.footer .container .copyright a { text-decoration: underline; }
 .footer .container .copyright .text { margin-top: 0; margin-bottom: 11px; }
-.footer .container .contact-us { position: absolute; top: -5px; right: -1px; font-weight: 600; font-size: 16px; line-height: 20px; text-align: center; color: #F64F00; border: 1px solid #F64F00; border-radius: 50%; display: inline-flex; width: 130px; height: 130px; justify-content: center; align-items: center; padding: 9px; }
+.footer .container .contact-us { position: absolute; top: -5px; right: -1px; font-weight: 600; font-size: 16px; line-height: 20px; text-align: center; color: #F64F00; border: 1px solid #F64F00; border-radius: 50%; display: inline-flex; width: 130px; height: 130px; justify-content: center; align-items: center; padding: 9px; transition: 0.2s; }
+.footer .container .contact-us:hover { background-color: #F64F00; color: #FFFFFF; }
 .footer .container .created-by { position: absolute; bottom: 0; right: 15px; }
 
 .hero { padding-top: 23px; padding-bottom: 130px; }
@@ -93,11 +97,14 @@ section { overflow: hidden; }
 .hero .item .info .title { font-weight: 300; font-size: 16px; line-height: 22px; margin-bottom: 32px; width: 60%; }
 .hero .item .info .circle-wrap { width: 135px; height: 135px; position: relative; }
 .hero .item .info .circle-wrap .circle { width: 125px; height: 125px; display: flex; align-items: center; justify-content: center; font-weight: 400; font-size: 10px; text-transform: uppercase; border-radius: 50%; border: 1px solid #F5F5F5; }
+.hero .item .info .circle-wrap .circle .rotText p { height: 58px; position: absolute; }
+.hero .item .info .circle-wrap .circle .rotText .curved-text { display: inline-block; margin-bottom: -15px; margin-left: 0px; transform-origin: 0px 68px; animation: rotation-reverse 24s linear infinite; height: calc(116px + 2rem); }
 .hero .item .info .circle-wrap .play { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 .hero .item .catalog { opacity: 0; pointer-events: none; transition: 0.4s ease-out; z-index: 4; width: 150px; height: 150px; position: absolute; top: -75px; right: -103px; display: flex; justify-content: center; align-items: center; transform: rotate(15deg); border-radius: 50%; background-color: #ffffff; color: #333333; font-weight: 600; font-size: 16px; line-height: 20px; }
+.hero .item .catalog:hover { transition: all 0.5s cubic-bezier(0.27, 0.55, 0.58, 1.615); -webkit-box-shadow: 0px 4px 21px 14px rgba(255, 255, 255, 0.2); -moz-box-shadow: 0px 4px 21px 14px rgba(255, 255, 255, 0.2); box-shadow: 0px 4px 21px 14px rgba(255, 255, 255, 0.2); }
 .hero .item .background { position: absolute; top: 0; right: 0; bottom: 0; left: 0; object-fit: contain; object-position: center; z-index: 2; }
 .hero .item .blur.orange { transition: 0.7s ease-out; width: 674px; height: 634px; position: absolute; left: -250px; top: -93px; z-index: 1; background: radial-gradient(50% 50% at 50% 50%, #F64F00 0%, rgba(246, 79, 0, 0) 100%); filter: blur(32px); }
-.hero .item .blur.blue { transition: 1s ease-out; width: 878px; height: 645px; position: absolute; top: -196px; right: -193px; z-index: 1; background: radial-gradient(50% 50% at 50% 50%, #0178F3 0%, rgba(1, 120, 243, 0) 100%); filter: blur(32px); }
+.hero .item .blur.blue { transition: 0.7s ease-out; width: 878px; height: 645px; position: absolute; top: -196px; right: -193px; z-index: 1; background: radial-gradient(50% 50% at 50% 50%, #0178F3 0%, rgba(1, 120, 243, 0) 100%); filter: blur(32px); }
 .hero .hero-swiper-wrap { position: relative; }
 .hero .hero-swiper-wrap .swiper-slide { display: flex; justify-content: center; align-items: center; }
 .hero .hero-swiper-wrap .swiper-slide:not(.swiper-slide-active) .item { transform: scale(0.9); }
@@ -109,9 +116,6 @@ section { overflow: hidden; }
 .hero .hero-swiper-wrap .swiper-button-next { border: 1px solid rgba(125, 125, 125, 0.8); border-radius: 0px 30px 30px 0px; padding: 6px 24px; right: 2px; top: 49%; transition: 0.4s ease-out; }
 .hero .hero-swiper-wrap .swiper-button-next:hover { border-color: #bcbcbc; }
 
-.rotText p { height: 58px; position: absolute; }
-.rotText .curved-text { display: inline-block; margin-bottom: -15px; margin-left: 0px; transform-origin: 0px 68px; animation: rotation-reverse 24s linear infinite; height: calc(116px + 2rem); }
-
 .recommended { background-color: #F5F5F5; position: relative; padding-top: 103px; padding-bottom: 43px; overflow: visible; }
 .recommended .container { position: relative; }
 .recommended .container h3 { margin-bottom: 43px; }
@@ -122,9 +126,11 @@ section { overflow: hidden; }
 .recommended .container .recommended-swiper-wrap .card .title { font-weight: 400; font-size: 18px; line-height: 24px; letter-spacing: 0.4px; margin-bottom: 8px; }
 .recommended .container .recommended-swiper-wrap .card .price { font-weight: 700; font-size: 18px; line-height: 22px; margin-top: 0; margin-bottom: 23px; }
 .recommended .container .recommended-swiper-wrap .card .controls { display: flex; }
-.recommended .container .recommended-swiper-wrap .card .controls .compare { border: 1px solid #BCBCBC; border-radius: 30px 0px 0px 30px; padding: 12px 18px; display: flex; justify-content: center; align-items: center; margin-right: 10px; }
-.recommended .container .recommended-swiper-wrap .card .controls .detail { border: 1px solid #333333; border-radius: 0px 30px 30px 0px; padding: 12px 24px; width: 100%; position: relative; font-weight: 600; font-size: 16px; line-height: 20px; display: flex; align-items: center; }
-.recommended .container .recommended-swiper-wrap .card .controls .detail::after { content: url(./img/icons/right-check.svg); position: absolute; right: 23px; top: 51%; transform: translateY(-50%); }
+.recommended .container .recommended-swiper-wrap .card .controls .compare { border: 1px solid #BCBCBC; border-radius: 30px 0px 0px 30px; padding: 12px 18px; display: flex; justify-content: center; align-items: center; margin-right: 10px; transition: 0.2s; }
+.recommended .container .recommended-swiper-wrap .card .controls .compare:hover { border-color: #333333; }
+.recommended .container .recommended-swiper-wrap .card .controls .detail { border: 1px solid #333333; border-radius: 0px 30px 30px 0px; padding: 12px 24px; width: 100%; position: relative; font-weight: 600; font-size: 16px; line-height: 20px; display: flex; justify-content: space-between; align-items: center; transition: 0.2s; }
+.recommended .container .recommended-swiper-wrap .card .controls .detail:hover { border-color: #f64f00; color: #f64f00; }
+.recommended .container .recommended-swiper-wrap .card .controls .detail:hover svg path { stroke: #f64f00; }
 .recommended .container .recommended-swiper-wrap .slider-controls { position: absolute; top: 16px; right: 8px; display: flex; }
 .recommended .container .recommended-swiper-wrap .slider-controls .swiper-button-prev { border: 1px solid #BCBCBC; border-radius: 30px 0px 0px 30px; position: initial; padding: 6px 24px; transition: 0.3s; }
 .recommended .container .recommended-swiper-wrap .slider-controls .swiper-button-prev:hover { border-color: #7d7d7d; }
@@ -145,6 +151,7 @@ section { overflow: hidden; }
 .about .test .background { position: absolute; top: 39%; left: 50%; width: 100%; transform: translate(-50%, -50%); z-index: 0; }
 .about .test .image { margin-top: 41px; margin-right: 96px; z-index: 2; }
 .about .test .start-test { z-index: 2; background: #FFFFFF; border-radius: 50%; width: 150px; height: 150px; display: flex; justify-content: center; align-items: center; position: absolute; right: 131px; bottom: 31%; font-weight: 600; font-size: 16px; line-height: 20px; }
+.about .test .start-test:hover { transition: all 0.5s cubic-bezier(0.27, 0.55, 0.58, 1.615); -webkit-box-shadow: 0px 4px 21px 14px rgba(255, 255, 255, 0.2); -moz-box-shadow: 0px 4px 21px 14px rgba(255, 255, 255, 0.2); box-shadow: 0px 4px 21px 14px rgba(255, 255, 255, 0.2); }
 .about .test .blur.orange { width: 568px; height: 568px; position: absolute; left: 47px; top: 54px; z-index: 1; background: radial-gradient(50% 50% at 50% 50%, #F64F00 0%, rgba(246, 79, 0, 0) 100%); filter: blur(57px); }
 .about .test .blur.blue { width: 524px; height: 524px; background: radial-gradient(50% 50% at 50% 50%, #0178F3 0%, rgba(1, 120, 243, 0) 100%); filter: blur(68px); position: absolute; bottom: 33px; right: -143px; z-index: 1; }
 .about .panel { background: #F5F5F5; color: #333333; border-radius: 100px 0 0 100px; padding: 100px 160px 38px; margin-left: 190px; }
@@ -156,7 +163,8 @@ section { overflow: hidden; }
 .about .panel .row .col .item h5 { font-weight: 600; font-size: 24px; line-height: 120%; margin-bottom: 15px; }
 .about .panel .row .col .item .subtitle { font-weight: 400; font-size: 16px; line-height: 22px; color: #7D7D7D; margin-bottom: 40px; }
 .about .panel .row .subtitle { font-weight: 400; font-size: 18px; line-height: 24px; margin-top: 0; margin-bottom: 37px; }
-.about .panel .row .detail { width: 150px; height: 150px; display: inline-flex; border: 1px solid #F64F00; border-radius: 50%; color: #F64F00; display: flex; justify-content: center; align-items: center; text-align: center; font-weight: 600; font-size: 16px; line-height: 20px; }
+.about .panel .row .detail { width: 150px; height: 150px; display: inline-flex; border: 1px solid #F64F00; border-radius: 50%; color: #F64F00; display: flex; justify-content: center; align-items: center; text-align: center; font-weight: 600; font-size: 16px; line-height: 20px; transition: 0.2s; }
+.about .panel .row .detail:hover { background-color: #F64F00; color: #FFFFFF; }
 
 .subscription { position: relative; display: flex; padding-top: 123px; padding-bottom: 156px; }
 .subscription .title { margin-bottom: 40px; }
@@ -170,6 +178,7 @@ section { overflow: hidden; }
 .subscription .subtitle { font-weight: 400; font-size: 18px; line-height: 24px; color: #BCBCBC; width: 40%; margin-bottom: 32px; }
 .subscription form input { padding-bottom: 10px; border: none; background: transparent; border-bottom: 1px solid #7D7D7D; outline: none; font-weight: 400; font-size: 16px; line-height: 22px; color: #fff; font-family: 'Raleway'; margin-bottom: 57px; width: 445px; }
 .subscription form input::placeholder { font-family: 'Raleway'; font-weight: 400; font-size: 16px; line-height: 22px; color: #7D7D7D; }
-.subscription form button { width: 150px; height: 150px; border-radius: 50%; background: #FFFFFF; text-align: center; display: flex; justify-content: center; align-items: center; font-weight: 600; font-size: 16px; line-height: 20px; color: #333333; }
+.subscription form button { width: 150px; height: 150px; border-radius: 50%; background: #FFFFFF; text-align: center; display: flex; justify-content: center; align-items: center; font-weight: 600; font-size: 16px; line-height: 20px; color: #333333; border: 1px solid transparent; cursor: pointer; }
+.subscription form button:hover { transition: all 0.5s cubic-bezier(0.27, 0.55, 0.58, 1.615); -webkit-box-shadow: 0px 4px 21px 14px rgba(255, 255, 255, 0.2); -moz-box-shadow: 0px 4px 21px 14px rgba(255, 255, 255, 0.2); box-shadow: 0px 4px 21px 14px rgba(255, 255, 255, 0.2); }
 .subscription .image { position: absolute; right: -92px; top: 90px; width: 736px; height: 736px; border: 1px solid #333333; border-radius: 50%; display: flex; justify-content: center; align-items: center; }
 .subscription .image img { width: 655px; height: 655px; object-fit: cover; border-radius: 50%; }

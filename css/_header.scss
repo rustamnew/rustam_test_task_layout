@@ -45,9 +45,12 @@
                 }
                 li {
                     margin-right: 27px;
-
+                    
                     &:last-child {
                         margin-right: 0;
+                    }
+                    a {
+                        transition: 0.2s;
                     }
                     a:hover {
                         color: #BCBCBC;

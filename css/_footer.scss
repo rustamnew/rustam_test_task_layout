@@ -118,6 +118,13 @@
         }
 
         .copyright {
+            font-size: 16px;
+            line-height: 22px;
+            color: #7D7D7D;
+
+            a {
+                text-decoration: underline;
+            }
             .text {
                 margin-top: 0;
                 margin-bottom: 11px;
@@ -142,6 +149,12 @@
             justify-content: center;
             align-items: center;
             padding: 9px;
+
+            transition: 0.2s;
+            &:hover {
+                background-color: #F64F00;
+                color: #FFFFFF;
+            }
         }
 
         .created-by {

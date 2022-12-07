@@ -7,7 +7,7 @@ console.log('test log');
 const swiperHero = new Swiper('.hero-swiper', {
     centeredSlides: true,
     loop: true,
-    
+    loopAdditionalSlides: 6,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
