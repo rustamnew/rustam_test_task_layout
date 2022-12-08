@@ -103,8 +103,8 @@ section { overflow: hidden; }
 .hero .item .catalog { opacity: 0; pointer-events: none; transition: 0.4s ease-out; z-index: 4; width: 150px; height: 150px; position: absolute; top: -75px; right: -103px; display: flex; justify-content: center; align-items: center; transform: rotate(15deg); border-radius: 50%; background-color: #ffffff; color: #333333; font-weight: 600; font-size: 16px; line-height: 20px; }
 .hero .item .catalog:hover { transition: all 0.5s cubic-bezier(0.27, 0.55, 0.58, 1.615); -webkit-box-shadow: 0px 4px 21px 14px rgba(255, 255, 255, 0.2); -moz-box-shadow: 0px 4px 21px 14px rgba(255, 255, 255, 0.2); box-shadow: 0px 4px 21px 14px rgba(255, 255, 255, 0.2); }
 .hero .item .background { position: absolute; top: 0; right: 0; bottom: 0; left: 0; object-fit: contain; object-position: center; z-index: 2; }
-.hero .item .blur.orange { transition: 0.7s ease-out; width: 674px; height: 634px; position: absolute; left: -250px; top: -93px; z-index: 1; background: radial-gradient(50% 50% at 50% 50%, #F64F00 0%, rgba(246, 79, 0, 0) 100%); filter: blur(32px); }
-.hero .item .blur.blue { transition: 0.7s ease-out; width: 878px; height: 645px; position: absolute; top: -196px; right: -193px; z-index: 1; background: radial-gradient(50% 50% at 50% 50%, #0178F3 0%, rgba(1, 120, 243, 0) 100%); filter: blur(32px); }
+.hero .item .blur.orange { transition: 0.7s ease-out; width: 674px; height: 634px; position: absolute; left: -202px; top: -115px; z-index: 1; background: radial-gradient(50% 50% at 50% 50%, #F64F00 0%, rgba(246, 79, 0, 0) 100%); filter: blur(32px); }
+.hero .item .blur.blue { transition: 0.7s ease-out; width: 878px; height: 645px; position: absolute; top: -129px; right: -207px; z-index: 1; background: radial-gradient(50% 50% at 50% 50%, #0178F3 0%, rgba(1, 120, 243, 0) 100%); filter: blur(32px); }
 .hero .hero-swiper-wrap { position: relative; }
 .hero .hero-swiper-wrap .swiper-slide { display: flex; justify-content: center; align-items: center; }
 .hero .hero-swiper-wrap .swiper-slide:not(.swiper-slide-active) .item { transform: scale(0.9); }
